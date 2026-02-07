@@ -29,26 +29,42 @@ A lightweight agent that extracts key fields from FNOL documents, identifies mis
 
 fnol_agent/
 ├── run.py # Main command-line interface
-├── requirements.txt # Python dependencies
-├── README.md # This documentation
-├── config/ # Configuration files
-│ └── routing_rules.json # Business routing rules
-├── data/ # Sample PDF documents
-│ └── ACORD-Automobile-Loss-Notice-12.05.16.pdf
-├── txt_files/ # Sample TXT documents
-│ ├── fnoi_fraud_alert.txt
-│ ├── fnoi_injury_claim.txt
-│ ├── fnoi_small_claim.txt
-│ └── fnoi_theft_claim.txt
-├── src/ # Core application source
-│ ├── init.py
-│ ├── parser.py # Document parser (PDF/TXT)
-│ ├── validator.py # Field validation engine
-│ ├── router.py # Routing decision engine
-│ ├── models.py # Data models (Pydantic)
-│ └── processor.py # Main processing pipeline
-└── *.json # Generated output files
 
+├── requirements.txt # Python dependencies
+
+├── README.md # This documentation
+
+├── data/ # Sample PDF documents
+
+│ └── ACORD-Automobile-Loss-Notice-12.05.16.pdf
+
+├── txt_files/ # Sample TXT documents
+
+│ ├── fnoi_fraud_alert.txt
+
+│ ├── fnoi_injury_claim.txt
+
+│ ├── fnoi_small_claim.txt
+
+│ └── fnoi_theft_claim.txt
+
+├── src/ # Core application source
+
+│ ├── init.py
+
+│ ├── parser.py # Document parser (PDF/TXT)
+
+│ ├── validator.py # Field validation engine
+
+│ ├── router.py # Routing decision engine
+
+│ ├── models.py # Data models (Pydantic)
+
+│ └── processor.py # Main processing pipeline
+
+├──test_fixes.py 
+
+└── *.json # Generated output files
 
 ## 🚀 Quick Start
 
@@ -59,7 +75,6 @@ fnol_agent/
 
 ### 2. Installation
 
-```bash
 # Navigate to your project directory
 cd path/to/fnol_agent
 
@@ -91,89 +106,27 @@ python test_fixes.py
 
 
 🔧 How It Works
-1. Parsing Phase
-PDF Processing: Uses pdfplumber to extract text from PDF documents
+###  Parsing Phase
+**PDF Processing**: Uses pdfplumber to extract text from PDF documents
 
-Text Processing: Regex patterns identify key-value pairs in TXT files
+**Text Processing**: Regex patterns identify key-value pairs in TXT files
 
-Field Extraction: Extracts 10+ key insurance fields including:
+**Field Extraction**: Extracts 10+ key insurance fields including:
 
-Policy Information (number, holder name)
+**Policy Information** (number, holder name)
 
-Incident Details (date, time, location)
+**Incident Details** (date, time, location)
 
-Claim Information (type, description, estimated damage)
+**Claim Information** (type, description, estimated damage)
 
-Asset Details (type, VIN)
+**Asset Details** (type, VIN)
 
-2. Validation Phase
-Mandatory Field Check: Validates presence of required fields
+###  Validation Phase 
+**Mandatory Field Check**: Validates presence of required fields
 
-Data Format Validation: Checks dates, amounts, and formats
+**Data Format Validation**: Checks dates, amounts, and formats
 
-Inference Logic: Infers missing fields (e.g., asset type from VIN)
+**Inference Logic**: Infers missing fields (e.g., asset type from VIN)
 
-3. Routing Phase (Business Rules)
-Applies rules in priority order:
 
-Priority	Rule	Route
-1	Description contains fraud indicators ("fraudulent", "staged")	Investigation Flag
-2	Claim type indicates injury	Specialist Queue
-3	Any mandatory field missing	Manual Review
-4	Estimated damage < $25,000	Fast-track
-5	Estimated damage ≥ $25,000	Standard Processing
-4. Output Phase
-Generates JSON files with:
-
-extractedFields: All successfully extracted data
-
-missingFields: List of missing mandatory fields
-
-recommendedRoute: Determined workflow route
-
-reasoning: Explanation for routing decision
-
-📝 Output Format Example
-json
-{
-  "extractedFields": {
-    "policy_number": "INS987654321",
-    "policyholder_name": "Jane M. Doe",
-    "incident_date": "01/20/2024",
-    "incident_time": "02:15 PM",
-    "location": "789 Park Avenue, Metropolis, NY 10001",
-    "estimate_amount": "45000",
-    "estimated_damage": "45000",
-    "claim_type": "Theft",
-    "asset_type": "Vehicle",
-    "vin": "5XYZU3LB8EG123789",
-    "description": "Vehicle stolen from parking garage overnight..."
-  },
-  "missingFields": ["claimant", "initial_estimate"],
-  "recommendedRoute": "Standard Processing",
-  "reasoning": "Estimated damage ($45,000) ≥ $25,000"
-}
-
-Verify Output
-Check generated JSON files:
-
-*_result.json: Individual document results
-
-all_results.json: Combined results from demo run
-
-🐛 Troubleshooting
-Issue	Solution
-"ModuleNotFoundError: No module named 'pdfplumber'"	Run pip install pdfplumber
-"File not found" error	Ensure files exist in data/ or txt_files/
-PDF parsing returns empty results	PDF may be scanned/image-based (requires OCR)
-Field extraction misses data	Check regex patterns in src/parser.py
-Wrong routing decisions	Verify business rules in src/router.py
-⚡ Performance Notes
-Processing Speed: TXT files process in <100ms, PDFs in 1-5 seconds
-
-Memory Usage: Minimal (processes one document at a time)
-
-Scalability: Handles batch processing via python run.py demo
-
-Output: Generates separate JSON files for each processed document
 
