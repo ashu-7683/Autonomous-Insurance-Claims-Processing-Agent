@@ -1,0 +1,12 @@
+POLICY NUMBER: INJ777888999
+NAME OF INSURED: Michael Chen
+DATE OF LOSS: 02/28/2024
+TIME: 11:45 AM
+LOCATION: 123 Commerce St, Business District
+ESTIMATE AMOUNT: $75,000
+CLAIM TYPE: Injury
+DESCRIPTION: Slip and fall accident in office building lobby.
+Employee suffered back injury and requires medical treatment.
+Witnesses present.
+ASSET TYPE: Commercial Property
+CONTACT: HR Department - (555) 987-6543

@@ -1,0 +1,13 @@
+POLICY NUMBER: INS987654321
+NAME OF INSURED: Jane M. Doe
+DATE OF LOSS: 01/20/2024
+TIME: 02:15 PM
+LOCATION: 789 Park Avenue, Metropolis, NY 10001
+ESTIMATE AMOUNT: $45,000
+CLAIM TYPE: Theft
+DESCRIPTION: Vehicle stolen from parking garage overnight. 
+Security footage shows suspicious activity around 2:15 AM.
+Vehicle not recovered.
+VEHICLE MAKE: BMW
+V.I.N.: 5XYZU3LB8EG123789
+CONTACT: Jane Doe - (555) 123-4567

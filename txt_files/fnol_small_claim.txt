@@ -1,0 +1,13 @@
+POLICY NUMBER: SML444555666
+NAME OF INSURED: Sarah Johnson
+DATE OF LOSS: 03/05/2024
+TIME: 09:30 AM
+LOCATION: Home driveway
+ESTIMATE AMOUNT: $8,500
+CLAIM TYPE: Property Damage
+DESCRIPTION: Tree fell on parked car during storm.
+Minor damage to roof and windshield.
+Photos available.
+VEHICLE MAKE: Toyota
+V.I.N.: 2T1BU4EE7CC123456
+CONTACT: Sarah Johnson - (555) 456-7890

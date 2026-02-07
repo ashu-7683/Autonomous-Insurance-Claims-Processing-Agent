@@ -1,0 +1,104 @@
+[
+  {
+    "extractedFields": {
+      "policy_number": "CONTACT",
+      "policyholder_name": "(First, Middle, Last) INSURED'S MAILING ADDRESS",
+      "location": "CODE DATE OF LOSS AND TIME AM",
+      "description": "OF ACCIDENT (ACORD 101, Additional Remarks Schedule, may be attached if more space is required)",
+      "estimate_amount": "WHERE CAN VEHICLE BE SEEN?: WHEN CAN VEHICLE BE SEEN?:",
+      "estimated_damage": "WHERE CAN VEHICLE BE SEEN?: WHEN CAN VEHICLE BE SEEN?:"
+    },
+    "missingFields": [
+      "incident_date",
+      "incident_time",
+      "claimant",
+      "asset_type",
+      "claim_type",
+      "initial_estimate"
+    ],
+    "recommendedRoute": "Manual Review",
+    "reasoning": "Missing mandatory fields: incident_date, incident_time, asset_type"
+  },
+  {
+    "extractedFields": {
+      "policy_number": "INS987654321",
+      "policyholder_name": "Jane M. Doe",
+      "incident_date": "01/20/2024",
+      "incident_time": "02:15 PM",
+      "location": "789 Park Avenue, Metropolis, NY 10001",
+      "estimate_amount": "45000",
+      "estimated_damage": "45000",
+      "claim_type": "Theft",
+      "vin": "5XYZU3LB8EG123789",
+      "description": "Vehicle stolen from parking garage overnight.",
+      "asset_type": "Vehicle"
+    },
+    "missingFields": [
+      "claimant",
+      "initial_estimate"
+    ],
+    "recommendedRoute": "Standard Processing",
+    "reasoning": "Estimated damage ($45,000) ≥ $25,000"
+  },
+  {
+    "extractedFields": {
+      "policy_number": "INJ777888999",
+      "policyholder_name": "Michael Chen",
+      "incident_date": "02/28/2024",
+      "incident_time": "11:45 AM",
+      "location": "123 Commerce St, Business District",
+      "estimate_amount": "75000",
+      "estimated_damage": "75000",
+      "claim_type": "Injury",
+      "asset_type": "Commercial Property",
+      "description": "Slip and fall accident in office building lobby."
+    },
+    "missingFields": [
+      "claimant",
+      "initial_estimate"
+    ],
+    "recommendedRoute": "Specialist Queue",
+    "reasoning": "Claim involves injury: 'injury'"
+  },
+  {
+    "extractedFields": {
+      "policy_number": "SML444555666",
+      "policyholder_name": "Sarah Johnson",
+      "incident_date": "03/05/2024",
+      "incident_time": "09:30 AM",
+      "location": "Home driveway",
+      "estimate_amount": "8500",
+      "estimated_damage": "8500",
+      "claim_type": "Property Damage",
+      "vin": "2T1BU4EE7CC123456",
+      "description": "Tree fell on parked car during storm.",
+      "asset_type": "Vehicle"
+    },
+    "missingFields": [
+      "claimant",
+      "initial_estimate"
+    ],
+    "recommendedRoute": "Fast-track",
+    "reasoning": "Estimated damage ($8,500) < $25,000"
+  },
+  {
+    "extractedFields": {
+      "policy_number": "FRA999000111",
+      "policyholder_name": "David Wilson",
+      "incident_date": "03/15/2024",
+      "incident_time": "04:00 PM",
+      "location": "456 Rural Road",
+      "estimate_amount": "60000",
+      "estimated_damage": "60000",
+      "claim_type": "Fire Damage",
+      "asset_type": "Residential Property",
+      "description": "House fire of suspicious origin."
+    },
+    "missingFields": [
+      "claimant",
+      "initial_estimate"
+    ],
+    "recommendedRoute": "Standard Processing",
+    "reasoning": "Estimated damage ($60,000) ≥ $25,000"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "extractedFields": {
+    "policy_number": "INJ777888999",
+    "policyholder_name": "Michael Chen",
+    "incident_date": "02/28/2024",
+    "incident_time": "11:45 AM",
+    "location": "123 Commerce St, Business District",
+    "estimate_amount": "75000",
+    "estimated_damage": "75000",
+    "claim_type": "Injury",
+    "asset_type": "Commercial Property",
+    "description": "Slip and fall accident in office building lobby."
+  },
+  "missingFields": [
+    "claimant",
+    "initial_estimate"
+  ],
+  "recommendedRoute": "Specialist Queue",
+  "reasoning": "Claim involves injury: 'injury'"
+}

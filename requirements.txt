@@ -1,0 +1,9 @@
+pypdf2>=3.0.0
+pdfplumber>=0.10.0
+python-docx>=0.8.11
+spacy>=3.7.0
+pydantic>=2.5.0
+typer>=0.9.0
+rich>=13.7.0
+python-multipart>=0.0.6
+ujson>=5.8.0

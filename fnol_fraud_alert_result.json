@@ -1,0 +1,20 @@
+{
+  "extractedFields": {
+    "policy_number": "FRA999000111",
+    "policyholder_name": "David Wilson",
+    "incident_date": "03/15/2024",
+    "incident_time": "04:00 PM",
+    "location": "456 Rural Road",
+    "estimate_amount": "60000",
+    "estimated_damage": "60000",
+    "claim_type": "Fire Damage",
+    "asset_type": "Residential Property",
+    "description": "House fire of suspicious origin."
+  },
+  "missingFields": [
+    "claimant",
+    "initial_estimate"
+  ],
+  "recommendedRoute": "Standard Processing",
+  "reasoning": "Estimated damage ($60,000) ≥ $25,000"
+}

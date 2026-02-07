@@ -1,0 +1,13 @@
+POLICY NUMBER: FRA999000111
+NAME OF INSURED: David Wilson
+DATE OF LOSS: 03/15/2024
+TIME: 04:00 PM
+LOCATION: 456 Rural Road
+ESTIMATE AMOUNT: $60,000
+CLAIM TYPE: Fire Damage
+DESCRIPTION: House fire of suspicious origin. 
+Neighbors report seeing the claimant removing valuables before the fire.
+This claim appears to be staged and potentially fraudulent.
+INVESTIGATION NEEDED.
+ASSET TYPE: Residential Property
+CONTACT: David Wilson - (555) 111-2222

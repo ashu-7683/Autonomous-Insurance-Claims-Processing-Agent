@@ -1,0 +1,20 @@
+{
+  "extractedFields": {
+    "policy_number": "CONTACT",
+    "policyholder_name": "(First, Middle, Last) INSURED'S MAILING ADDRESS",
+    "location": "CODE DATE OF LOSS AND TIME AM",
+    "description": "OF ACCIDENT (ACORD 101, Additional Remarks Schedule, may be attached if more space is required)",
+    "estimate_amount": "WHERE CAN VEHICLE BE SEEN?: WHEN CAN VEHICLE BE SEEN?:",
+    "estimated_damage": "WHERE CAN VEHICLE BE SEEN?: WHEN CAN VEHICLE BE SEEN?:"
+  },
+  "missingFields": [
+    "incident_date",
+    "incident_time",
+    "claimant",
+    "asset_type",
+    "claim_type",
+    "initial_estimate"
+  ],
+  "recommendedRoute": "Manual Review",
+  "reasoning": "Missing mandatory fields: incident_date, incident_time, asset_type"
+}

@@ -1,0 +1,21 @@
+{
+  "extractedFields": {
+    "policy_number": "SML444555666",
+    "policyholder_name": "Sarah Johnson",
+    "incident_date": "03/05/2024",
+    "incident_time": "09:30 AM",
+    "location": "Home driveway",
+    "estimate_amount": "8500",
+    "estimated_damage": "8500",
+    "claim_type": "Property Damage",
+    "vin": "2T1BU4EE7CC123456",
+    "description": "Tree fell on parked car during storm.",
+    "asset_type": "Vehicle"
+  },
+  "missingFields": [
+    "claimant",
+    "initial_estimate"
+  ],
+  "recommendedRoute": "Fast-track",
+  "reasoning": "Estimated damage ($8,500) < $25,000"
+}

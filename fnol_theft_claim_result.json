@@ -1,0 +1,21 @@
+{
+  "extractedFields": {
+    "policy_number": "INS987654321",
+    "policyholder_name": "Jane M. Doe",
+    "incident_date": "01/20/2024",
+    "incident_time": "02:15 PM",
+    "location": "789 Park Avenue, Metropolis, NY 10001",
+    "estimate_amount": "45000",
+    "estimated_damage": "45000",
+    "claim_type": "Theft",
+    "vin": "5XYZU3LB8EG123789",
+    "description": "Vehicle stolen from parking garage overnight.",
+    "asset_type": "Vehicle"
+  },
+  "missingFields": [
+    "claimant",
+    "initial_estimate"
+  ],
+  "recommendedRoute": "Standard Processing",
+  "reasoning": "Estimated damage ($45,000) ≥ $25,000"
+}
