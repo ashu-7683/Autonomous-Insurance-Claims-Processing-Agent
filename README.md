@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FNOL Processing Agent
 
 A lightweight agent for extracting key fields from FNOL (First Notice of Loss) documents, identifying missing/inconsistent fields, classifying claims, and routing to correct workflows.
@@ -16,3 +17,6 @@ A lightweight agent for extracting key fields from FNOL (First Notice of Loss) d
 ```bash
 git clone <repository-url>
 cd fnol-agent
+=======
+# Autonomous-Insurance-Claims-Processing-Agent
+>>>>>>> 9cd8a0915e6c87ff074e0a07fd33a720dd02e53b
