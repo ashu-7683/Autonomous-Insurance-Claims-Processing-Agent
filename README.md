@@ -1,6 +1,6 @@
 # FNOL (First Notice of Loss) Processing Agent
 
-A lightweight agent that extracts key fields from FNOL documents, identifies missing/inconsistent fields, classifies claims, and routes them to appropriate workflows using intelligent parsing and rule-based routing.
+A lightweight agent that extracts key fields from FNOL documents, identifies missing or inconsistent fields, classifies claims, and routes them to appropriate workflows using intelligent parsing and rule-based routing.
 
 ## ✨ Features
 
