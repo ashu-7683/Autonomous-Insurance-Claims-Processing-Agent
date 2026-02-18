@@ -109,7 +109,7 @@ python test_fixes.py
 ###  Parsing Phase
 **PDF Processing**: Uses pdfplumber to extract text from PDF documents
 
-**Text Processing**: Regex patterns identify key-value pairs in TXT files
+**Text Processing**: Regex patterns identify key value pairs in TXT files
 
 **Field Extraction**: Extracts 10+ key insurance fields including:
 
